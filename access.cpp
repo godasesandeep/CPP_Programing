@@ -1,31 +1,29 @@
 #include<iostream>
-
 using namespace std;
 
-class demo
+class Demo
 {
     public:
         int i;
+
     private:
         int j;
+    
     protected:
         int k;
-
+    
     public:
-        demo()
+        Demo()
         {
-            i=9;
-            j=10;
-            k=11;
+            i = 10;
+            j = 20; 
+            k = 30;
         }
-
 };
-
 
 int main()
 {
-
-    demo obj;
+    Demo obj;
     cout<<obj.i;
     cout<<obj.j;
     cout<<obj.k;

@@ -1,16 +1,14 @@
 #include<iostream>
-
 using namespace std;
 
-class hello
+class Hello
 {
     public:
-        void fun();
-        void gun();
-        
+        void Fun();
+        void Gun();
 };
 
-class demo
+class Demo
 {
     public:
         int i;
@@ -20,35 +18,37 @@ class demo
         int k;
 
     public:
-        demo()
+        Demo()
         {
-            i=9;
-            j=10;
-            k=11;
+            i = 10;
+            j = 20;
+           k = 30;
         }
-        friend class hello;
+        friend class Hello;
 };
-   
-void hello::fun()
-    {
-        demo obj;
-        cout<<obj.i<<endl;
-        cout<<obj.j<<endl;
-        cout<<obj.k<<endl;
-    }
 
-void hello::gun()
-    {
-        demo obj;
-        cout<<obj.i<<endl;
-        cout<<obj.j<<endl;
-        cout<<obj.k<<endl;
-    }
+void Hello::Fun()
+{
+    Demo obj;
+    cout<<obj.i<<"\n";
+    cout<<obj.j<<"\n";
+    cout<<obj.k<<"\n";        
+}
+
+void Hello::Gun()
+{
+    Demo obj;
+    cout<<obj.i<<"\n";
+    cout<<obj.j<<"\n";
+    cout<<obj.k<<"\n";        
+}
 
 int main()
 {
-    hello hobj;
-    hobj.fun();
-    hobj.gun();
+    Hello hobj;
+
+    hobj.Fun();
+    hobj.Gun();
+
     return 0;
 }

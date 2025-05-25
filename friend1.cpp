@@ -1,8 +1,7 @@
 #include<iostream>
-
 using namespace std;
 
-class demo
+class Demo
 {
     public:
         int i;
@@ -12,25 +11,27 @@ class demo
         int k;
 
     public:
-        demo()
+        Demo()
         {
-            i=9;
-            j=10;
-            k=11;
+            i = 10;
+            j = 20;
+            k = 30;
         }
-        friend void fun();
+
+        friend void Fun();
 };
 
-void fun()
+void Fun()
 {
-    demo obj;
-    cout<<obj.i<<endl;
-    cout<<obj.j<<endl;
-    cout<<obj.k<<endl;
+    Demo obj;
+    cout<<obj.i<<"\n";
+    cout<<obj.j<<"\n";
+    cout<<obj.k<<"\n";        
 }
 
 int main()
 {
-    fun();
+    Fun();
+
     return 0;
 }

@@ -1,29 +1,27 @@
 #include<iostream>
 
-
 namespace Marvellous
-
 {
     class Demo
     {
-        //logic
-    };
+        // Logic
+    };   
 }
 
 namespace PPA
 {
     class Hello
     {
-        //logic
-    };
+        // Logic
+    };   
 }
+using namespace Marvellous;
 
-using namespace PPA;
 int main()
 {
-    std::cout<<"Inside main \n";
-    Marvellous::Demo dobj;
-    Hello hobj;
+    std::cout<<"Inside main\n";
+    Demo dobj;
+    PPA::Hello hobj;
 
     return 0;
 }

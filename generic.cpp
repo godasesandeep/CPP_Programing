@@ -1,29 +1,28 @@
 #include<iostream>
-
 using namespace std;
 
-int addition(int no1, int no2)
+int Addition(int No1, int No2)
 {
-    int ans;
-    ans =no1+no2;
-    return ans;
+    int Ans;
+    Ans = No1 + No2;
+    return Ans;
 }
 
-int max(int no1 ,int no2)
+int Maximum(int No1 , int No2)
 {
-    if(no1>no2) 
-    {return no1;}
+    if(No1 > No2)
+    {   return No1; }
     else
-    {return no2;}
-
+    {   return No2; }
 }
 
 int main()
 {
-    int a=11,b=21,ans=0;
-    ans = addition(a,b);
-    cout<<"Addition is : "<<ans<<endl;
-    ans=max(a,b);
-    cout<<"Largest number is "<<ans<<endl;
+    int A = 11, B = 21, Ans = 0;
+    Ans = Addition(A,B);
+    cout<<"Addition is : "<<Ans<<"\n";
+    Ans = Maximum(A,B);
+    cout<<"Largest number is : "<<Ans<<"\n";
+
     return 0;
 }

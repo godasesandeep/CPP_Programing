@@ -1,50 +1,44 @@
 #include<iostream>
-
 using namespace std;
 
-class Arithmatic
+class Arithematic
 {
     public:
-        int no1;
-        int no2;
+        int No1;
+        int No2;
 
-        Arithmatic()
+        Arithematic()
         {
-            cout<<"Inside default constructor \n";
-            no1=0;
-            no2=0;
+            cout<<"Inside Default constructor\n";
+            No1 = 0;
+            No2 = 0;
         }
-
-        Arithmatic(int a, int b)
+        Arithematic(int A, int B)
         {
-            cout<<"Inside the parameterised constructor \n";
-            no1=a;
-            no2=b;
+            cout<<"Inside Parametrised constructor\n";
+            No1 = A;
+            No2 = B;
         }
-
-        Arithmatic(Arithmatic &ref)
+        Arithematic(Arithematic &ref)
         {
-            cout<<"Inside copy constructor \n";
-            no1=ref.no1;
-            no2=ref.no2;
-
+            cout<<"Inside copy constructor\n";
+            No1 = ref.No1;
+            No2 = ref.No2;
         }
-        ~Arithmatic()
+        ~Arithematic()
         {
-            cout<<"Inside Distructor \n";
+            cout<<"Inside Destructor\n";
         }
-
 };
 
 int main()
 {
-    Arithmatic obj1;
-    Arithmatic obj2(10,11);
-    Arithmatic obj3(obj2);
-    cout<<obj1.no1<<"\t"<<obj1.no2<<endl;
-    cout<<obj2.no1<<"\t"<<obj2.no2<<endl;
-    cout<<obj3.no1<<"\t"<<obj3.no2<<endl;
+    Arithematic obj1;
+    Arithematic obj2(11,21);
+    Arithematic obj3(obj2);
+    cout<<obj1.No1<<"\t"<<obj1.No2<<"\n";
+    cout<<obj2.No1<<"\t"<<obj2.No2<<"\n";
+    cout<<obj3.No1<<"\t"<<obj3.No2<<"\n";
 
     return 0;
 }
-
